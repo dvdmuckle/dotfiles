@@ -1,0 +1,11 @@
+#!/bin/bash
+#Remove local
+rm -f ~/.bashrc
+rm -f ~/.bash_aliases
+rm -rf ~/.vim
+rm -f ~/.vimrc
+#Copy to local
+cp -r .vim ~/
+cp .bashrc ~/
+cp .bash_alies ~/
+cp .vimrc ~/

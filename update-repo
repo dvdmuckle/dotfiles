@@ -1,0 +1,11 @@
+#!/bin/bash
+#Remove repo stuff
+rm -rf .vim
+rm -f .bashrc
+rm -f .bash_aliases
+rm -f .vimrc
+#Copy local stuff over
+cp -r ~/.vim .
+cp ~/.bashrc .
+cp ~/.bash_aliases .
+cp ~/.vimrc .
