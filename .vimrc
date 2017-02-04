@@ -27,12 +27,13 @@ filetype plugin indent on    " required
 syntax on
 set background=dark
 colorscheme solarized
+"Airline theme
+let g:airline_theme='solarized'
 "Weird quirky tab completion w/ menu
 "set wildmode=longest,list,full
 "set wildmenu
 "For just bash style tab completion
 set wildmode=longest,list
-"set runtimepath^=~/.vim/bundle/ctrlp.vim,~/.vim/bundle/vim-fugitive
 " Go to last file(s) if invoked without arguments.
 autocmd VimLeave * nested if (!isdirectory($HOME . "/.vim")) |
     \ call mkdir($HOME . "/.vim") |
