@@ -10,6 +10,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'ctrlpvim/ctrlp.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -27,7 +28,8 @@ filetype plugin indent on    " required
 syntax on
 set background=dark
 colorscheme solarized
-"Airline theme
+"Airline theme, also always show status bar
+:set laststatus=2
 let g:airline_theme='solarized'
 "Weird quirky tab completion w/ menu
 "set wildmode=longest,list,full
