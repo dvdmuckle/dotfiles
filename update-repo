@@ -9,5 +9,6 @@ cp -r ~/.vim .
 cp ~/.bashrc .
 cp ~/.bash_aliases .
 cp ~/.vimrc .
-#Remove the Session.vim
+#Remove the Session.vim and Bundles
 rm .vim/Session.vim
+rm -rf ./vim/bundle/

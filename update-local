@@ -9,3 +9,6 @@ cp -r .vim ~/
 cp .bashrc ~/
 cp .bash_aliases ~/
 cp .vimrc ~/
+#Bring over Vundle
+git clone https://github.com/VundleVim/Vundle.vim ~/.vim/bundle/Vundle.vim
+echo 'Done, make sure to run :PluginInstall in Vim'
