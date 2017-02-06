@@ -12,6 +12,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'yegappan/mru'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'suoto/vim-hdl'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -26,6 +28,18 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+" Syntastic Settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+" Configure the project file
+let g:vimhdl_conf_file = '<config/file>'
+" Tell Syntastic to use vim-hdl
+let g:syntastic_vhdl_checkers = ['vimhdl']
 syntax on
 set background=dark
 colorscheme solarized
