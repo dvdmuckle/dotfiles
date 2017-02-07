@@ -1,6 +1,6 @@
 # dotfiles
 Configs
 
-Uses submodules for Vim bundles. Make sure to clone with ```git clone --recursive https://github.com/dvdmuckle/dotfiles```
+To fix vim-airline fonts, install https://github.com/powerline/fonts
 
 TODO add Conky config
