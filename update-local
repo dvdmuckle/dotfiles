@@ -9,7 +9,8 @@ cp -r .vim ~/
 cp .bashrc ~/
 cp .bash_aliases ~/
 cp .vimrc ~/
-#Bring over Vundle
+#Bring over Vundle and git bash prompt
 rm -rf ~/.vim/bundle/
 git clone https://github.com/VundleVim/Vundle.vim ~/.vim/bundle/Vundle.vim
+git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
 echo 'Done, make sure to run :PluginInstall in Vim'
