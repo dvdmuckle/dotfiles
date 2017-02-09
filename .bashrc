@@ -119,5 +119,5 @@ fi
 #Alias for thefuck
 eval $(thefuck --alias)
 GIT_PROMPT_ONLY_IN_REPO=1
-source ~/.bash-git-prompt/gitprompt.sh
 GIT_PROMPT_START="\[\033[38;5;5m\]\u\[$(tput sgr0)\]\[\033[38;5;9m\]@\[$(tput sgr0)\]\[\033[38;5;3m\]\h\[$(tput sgr0)\]\[\033[38;5;7m\]:\[$(tput sgr0)\]\[\033[38;5;15m\]\w\\$ \[$(tput sgr0)\]"
+source ~/.bash-git-prompt/gitprompt.sh

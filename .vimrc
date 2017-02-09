@@ -14,6 +14,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'yegappan/mru'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'suoto/vim-hdl'
+Plugin 'vim-scripts/Conque-Shell'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
