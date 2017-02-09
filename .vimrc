@@ -48,6 +48,7 @@ colorscheme solarized
 :set laststatus=2
 let g:airline_theme='solarized'
 let g:airline_powerline_fonts=1
+:set guifont=Meslo\ LG\ S\ for\ Powerline\ 10
 "Weird quirky tab completion w/ menu
 "set wildmode=longest,list,full
 "set wildmenu
