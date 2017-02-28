@@ -16,6 +16,8 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'suoto/vim-hdl'
 Plugin 'vim-scripts/Conque-Shell'
 Plugin 'vim-scripts/c.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -55,6 +57,11 @@ let g:airline_powerline_fonts=1
 "set wildmenu
 "For just bash style tab completion
 set wildmode=longest,list
+if has("gui_running")
+	" GUI is running or is about to start.
+	" Maximize gvim window.
+	set lines=999 columns=999
+endif
 " Go to last file(s) if invoked without arguments.
 autocmd VimLeave * nested if (!isdirectory($HOME . "/.vim")) |
     \ call mkdir($HOME . "/.vim") |
@@ -63,3 +70,5 @@ autocmd VimLeave * nested if (!isdirectory($HOME . "/.vim")) |
 
 autocmd VimEnter * nested if argc() == 0 && filereadable($HOME . "/.vim/Session.vim") |
     \ execute "source " . $HOME . "/.vim/Session.vim" 
+"NERDTree
+autocmd vimenter * NERDTree
