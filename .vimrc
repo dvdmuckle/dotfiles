@@ -60,7 +60,7 @@ set wildmode=longest,list
 if has("gui_running")
 	" GUI is running or is about to start.
 	" Maximize gvim window.
-	set lines=999 columns=999
+	set lines=110 columns=250
 endif
 " Go to last file(s) if invoked without arguments.
 autocmd VimLeave * nested if (!isdirectory($HOME . "/.vim")) |
