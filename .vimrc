@@ -63,6 +63,7 @@ if has("gui_running")
 	set lines=110 columns=250
 endif
 " Go to last file(s) if invoked without arguments.
+autocmd VimLeave * NERDTreeClose
 autocmd VimLeave * nested if (!isdirectory($HOME . "/.vim")) |
     \ call mkdir($HOME . "/.vim") |
     \ endif |
@@ -70,5 +71,4 @@ autocmd VimLeave * nested if (!isdirectory($HOME . "/.vim")) |
 
 autocmd VimEnter * nested if argc() == 0 && filereadable($HOME . "/.vim/Session.vim") |
     \ execute "source " . $HOME . "/.vim/Session.vim" 
-"NERDTree
 autocmd vimenter * NERDTree
