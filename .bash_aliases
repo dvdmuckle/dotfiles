@@ -1,4 +1,4 @@
-alias vinesauce='livestreamer --http-header Client-ID=jzkbprff40iqj646a697cyrvl0zt2m6 twitch.tv/vinesauce source'
+alias vinesauce='livestreamer --http-header Client-ID=jzkbprff40iqj646a697cyrvl0zt2m6 twitch.tv/vinesauce 720p60'
 alias git-pull-recur='find . -maxdepth 1 -mindepth 1 -type d  -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin master \;'
 alias lcm='ssh pdp1170@TTY.LivingComputerMuseum.org'
 alias conky-reset='killall conky; conky -c ~/.harmattan-themes/Glass/God-Mode/.conkyrc -a top_right'
