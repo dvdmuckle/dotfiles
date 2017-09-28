@@ -66,6 +66,7 @@ if has("gui_running")
 endif
 " Go to last file(s) if invoked without arguments.
 autocmd VimLeave * NERDTreeClose
+autocmd VimLeave * SyntasticReset
 autocmd VimLeave * nested if (!isdirectory($HOME . "/.vim")) |
     \ call mkdir($HOME . "/.vim") |
     \ endif |
