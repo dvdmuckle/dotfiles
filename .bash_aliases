@@ -5,3 +5,8 @@ alias conky-reset='killall conky; conky -c ~/.harmattan-themes/Glass/God-Mode/.c
 alias poor-mans-vpn='ssh -L 2200:140.232.229.6:22 -l pi 140.232.101.155'
 alias music='mplayer -ao pulse -nocache http://misc.dvdmuckle.xyz:8000'
 alias twitch='livestreamer --http-header Client-ID=jzkbprff40iqj646a697cyrvl0zt2m6'
+alias clarkfs='sudo mount.cifs //fs.clarku.edu/class/GEOG190-01-F17 /home/dvdmuckle/Windows-Share/ -o user=dmuckle'
+alias clear-images='sudo docker rmi $(sudo docker images -a -q)'
+alias clear-containers='sudo docker rm $(sudo docker ps -a -f status=exited -q)'
+alias clear-volumes='sudo docker volume rm $(sudo docker volume ls -f dangling=true -q)'
+
