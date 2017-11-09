@@ -40,8 +40,9 @@ set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 1
+let g:syntastic_check_on_wq = 0
 let g:syntastic_go_checkers = ['go']
+let g:syntastic_cpp_check_header = 1
 " Configure the project file
 let g:vimhdl_conf_file = '<config/file>'
 " Tell Syntastic to use vim-hdl
