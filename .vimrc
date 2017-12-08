@@ -49,10 +49,8 @@ let g:vimhdl_conf_file = '<config/file>'
 let g:syntastic_vhdl_checkers = ['vimhdl']
 syntax on
 set background=dark
-colorscheme solarized
 "Airline theme, also always show status bar
 :set laststatus=2
-let g:airline_theme='solarized'
 let g:airline_powerline_fonts=1
 :set guifont=Meslo\ LG\ S\ for\ Powerline\ 10
 autocmd VimEnter * GoPath $HOME/Go
@@ -63,17 +61,19 @@ autocmd VimEnter * GoPath $HOME/Go
 set wildmode=longest,list
 if has("gui_running")
 	" GUI is running or is about to start.
-	" Maximize gvim window.
+	" Maximize gvim window, set colorscheme to solarized
+	let g:airline_theme='solarized'
 	set lines=110 columns=250
+	colorscheme solarized
 endif
 " Go to last file(s) if invoked without arguments.
 autocmd VimLeave * NERDTreeClose
 autocmd VimLeave * SyntasticReset
 autocmd VimLeave * nested if (!isdirectory($HOME . "/.vim")) |
-    \ call mkdir($HOME . "/.vim") |
-    \ endif |
-    \ execute "mksession! " . $HOME . "/.vim/Session.vim"
+			\ call mkdir($HOME . "/.vim") |
+			\ endif |
+			\ execute "mksession! " . $HOME . "/.vim/Session.vim"
 
 autocmd VimEnter * nested if argc() == 0 && filereadable($HOME . "/.vim/Session.vim") |
-    \ execute "source " . $HOME . "/.vim/Session.vim" 
+			\ execute "source " . $HOME . "/.vim/Session.vim" 
 autocmd vimenter * NERDTree
