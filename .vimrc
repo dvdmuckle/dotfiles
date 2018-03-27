@@ -19,6 +19,7 @@ Plugin 'vim-scripts/c.vim'
 Plugin 'fatih/vim-go'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'andrewstuart/vim-kubernetes'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -53,7 +54,7 @@ set background=dark
 :set laststatus=2
 let g:airline_powerline_fonts=1
 :set guifont=Meslo\ LG\ S\ for\ Powerline\ 10
-autocmd VimEnter * GoPath $HOME/Go
+"autocmd VimEnter * GoPath $HOME/Go
 "Weird quirky tab completion w/ menu
 "set wildmode=longest,list,full
 "set wildmenu
