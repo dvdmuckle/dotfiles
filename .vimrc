@@ -13,7 +13,6 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'yegappan/mru'
 Plugin 'vim-syntastic/syntastic'
-Plugin 'suoto/vim-hdl'
 Plugin 'vim-scripts/Conque-Shell'
 Plugin 'vim-scripts/c.vim'
 Plugin 'fatih/vim-go'
@@ -42,19 +41,15 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-let g:syntastic_go_checkers = ['go']
+let g:syntastic_go_checkers = ['govet', 'errcheck', 'go']
 let g:syntastic_cpp_check_header = 1
 " Configure the project file
-let g:vimhdl_conf_file = '<config/file>'
-" Tell Syntastic to use vim-hdl
-let g:syntastic_vhdl_checkers = ['vimhdl']
 syntax on
 set background=dark
 "Airline theme, also always show status bar
 :set laststatus=2
 let g:airline_powerline_fonts=1
 :set guifont=Meslo\ LG\ S\ for\ Powerline\ 10
-"autocmd VimEnter * GoPath $HOME/Go
 "Weird quirky tab completion w/ menu
 "set wildmode=longest,list,full
 "set wildmenu
