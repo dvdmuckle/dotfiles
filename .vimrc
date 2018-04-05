@@ -18,7 +18,9 @@ Plugin 'vim-scripts/c.vim'
 Plugin 'fatih/vim-go'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'andrewstuart/vim-kubernetes'
+Plugin 'c9s/helper.vim'
+Plugin 'c9s/treemenu.vim'
+Plugin 'c9s/vikube.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -43,6 +45,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_go_checkers = ['govet', 'errcheck', 'go']
 let g:syntastic_cpp_check_header = 1
+let g:vikube_autoupdate = 1
 " Configure the project file
 syntax on
 set background=dark
