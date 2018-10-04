@@ -21,6 +21,10 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'c9s/helper.vim'
 Plugin 'c9s/treemenu.vim'
 Plugin 'c9s/vikube.vim'
+Plugin 'hashivim/vim-terraform'
+Plugin 'martinda/Jenkinsfile-vim-syntax'
+Plugin 'edkolev/tmuxline.vim'
+Plugin 'dracula/vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -46,25 +50,21 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_go_checkers = ['govet', 'errcheck', 'go']
 let g:syntastic_cpp_check_header = 1
 let g:vikube_autoupdate = 1
+let g:terraform_align = 1
 " Configure the project file
 syntax on
 set background=dark
 "Airline theme, also always show status bar
 :set laststatus=2
 let g:airline_powerline_fonts=1
+let g:airline_theme='wombat'
+colorscheme dracula
 :set guifont=Meslo\ LG\ S\ for\ Powerline\ 10
 "Weird quirky tab completion w/ menu
 "set wildmode=longest,list,full
 "set wildmenu
 "For just bash style tab completion
 set wildmode=longest,list
-if has("gui_running")
-	" GUI is running or is about to start.
-	" Maximize gvim window, set colorscheme to solarized
-	let g:airline_theme='solarized'
-	set lines=110 columns=250
-	colorscheme solarized
-endif
 " Go to last file(s) if invoked without arguments.
 autocmd VimLeave * NERDTreeClose
 autocmd VimLeave * SyntasticReset
