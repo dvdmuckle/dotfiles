@@ -24,6 +24,8 @@ Plugin 'c9s/vikube.vim'
 Plugin 'hashivim/vim-terraform'
 Plugin 'martinda/Jenkinsfile-vim-syntax'
 Plugin 'edkolev/tmuxline.vim'
+Plugin 'lucidstack/ctrlp-mpc.vim'
+Bundle 'gabrielelana/vim-markdown'
 Plugin 'dracula/vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -51,6 +53,9 @@ let g:syntastic_go_checkers = ['govet', 'errcheck', 'go']
 let g:syntastic_cpp_check_header = 1
 let g:vikube_autoupdate = 1
 let g:terraform_align = 1
+let g:ctrlp_extensions = ['buffertag', 'tag', 'line', 'dir', 'tmux', 'mpc']
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+set nofixendofline
 " Configure the project file
 syntax on
 set background=dark
@@ -65,6 +70,7 @@ colorscheme dracula
 "set wildmenu
 "For just bash style tab completion
 set wildmode=longest,list
+set mouse=nicr
 " Go to last file(s) if invoked without arguments.
 autocmd VimLeave * NERDTreeClose
 autocmd VimLeave * SyntasticReset
