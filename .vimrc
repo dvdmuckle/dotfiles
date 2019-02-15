@@ -57,11 +57,10 @@ let g:ctrlp_extensions = ['buffertag', 'tag', 'line', 'dir', 'tmux', 'mpc']
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 set nofixendofline
 let g:tmuxline_preset = {
-      \'a'    : '#S',
+      \'a'    : ['#S', '#I'],
       \'b'    : '#W',
-      \'c'    : '#H',
       \'x'    : '#(mpc current)',
-      \'y'    : '#W %R',
+      \'y'    : '%H:%M',
       \'z'    : '#H'}
 " Configure the project file
 syntax on
