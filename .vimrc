@@ -56,6 +56,15 @@ let g:terraform_align = 1
 let g:ctrlp_extensions = ['buffertag', 'tag', 'line', 'dir', 'tmux', 'mpc']
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 set nofixendofline
+let g:tmuxline_preset = {
+      \'a'    : '#S',
+      \'b'    : '#W',
+      \'c'    : '#H',
+      \'win'  : '#I #W',
+      \'cwin' : '#I #W',
+      \'x'    : '#(mpc current)',
+      \'y'    : '#W %R',
+      \'z'    : '#H'}
 " Configure the project file
 syntax on
 set background=dark
