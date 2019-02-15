@@ -60,8 +60,6 @@ let g:tmuxline_preset = {
       \'a'    : '#S',
       \'b'    : '#W',
       \'c'    : '#H',
-      \'win'  : '#I #W',
-      \'cwin' : '#I #W',
       \'x'    : '#(mpc current)',
       \'y'    : '#W %R',
       \'z'    : '#H'}
