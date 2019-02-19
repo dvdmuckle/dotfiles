@@ -27,7 +27,8 @@ Plugin 'edkolev/tmuxline.vim'
 Plugin 'lucidstack/ctrlp-mpc.vim'
 Bundle 'gabrielelana/vim-markdown'
 Plugin 'dracula/vim'
-Plugin 'kodai12/vimify'
+Plugin 'dvdmuckle/vimify'
+Plugin 'durgaswaroop/vim-mpc'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
